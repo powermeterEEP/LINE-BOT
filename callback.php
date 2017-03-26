@@ -43,7 +43,7 @@ EOM;
    
    
   
-  $curl = curl_init('https://trialbot-api.line.me/v1/events');
+  $curl = curl_init('https://api.line.me/v2/bot/message/reply');
   curl_setopt($curl, CURLOPT_POST, true);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
   curl_setopt($curl, CURLOPT_POSTFIELDS, $responseMessage);
